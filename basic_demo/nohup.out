@@ -1,0 +1,99 @@
+[I 2024-03-28 09:33:21.924 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-03-28 09:33:21.928 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2024-03-28 09:33:21.930 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2024-03-28 09:33:21.933 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2024-03-28 09:33:21.933 ServerApp] jupyterlab | extension was successfully linked.
+[I 2024-03-28 09:33:21.936 ServerApp] notebook | extension was successfully linked.
+[I 2024-03-28 09:33:22.124 ServerApp] notebook_shim | extension was successfully linked.
+[W 2024-03-28 09:33:22.142 ServerApp] WARNING: The Jupyter server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 2024-03-28 09:33:22.142 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-03-28 09:33:22.144 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-03-28 09:33:22.144 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-03-28 09:33:22.146 LabApp] JupyterLab extension loaded from /root/miniconda3/envs/chatglm/lib/python3.11/site-packages/jupyterlab
+[I 2024-03-28 09:33:22.146 LabApp] JupyterLab application directory is /root/miniconda3/envs/chatglm/share/jupyter/lab
+[I 2024-03-28 09:33:22.146 LabApp] Extension Manager is 'pypi'.
+[I 2024-03-28 09:33:22.157 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-03-28 09:33:22.159 ServerApp] notebook | extension was successfully loaded.
+[I 2024-03-28 09:33:22.159 ServerApp] Serving notebooks from local directory: /root/ChatGLM3/basic_demo
+[I 2024-03-28 09:33:22.159 ServerApp] Jupyter Server 2.13.0 is running at:
+[I 2024-03-28 09:33:22.159 ServerApp] http://localhost:8000/lab?token=...
+[I 2024-03-28 09:33:22.159 ServerApp]     http://127.0.0.1:8000/lab?token=...
+[I 2024-03-28 09:33:22.159 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-03-28 09:33:22.176 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2024-03-28 09:33:47.722 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-03-28 09:33:47.725 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2024-03-28 09:33:47.727 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2024-03-28 09:33:47.729 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2024-03-28 09:33:47.729 ServerApp] jupyterlab | extension was successfully linked.
+[I 2024-03-28 09:33:47.732 ServerApp] notebook | extension was successfully linked.
+[I 2024-03-28 09:33:47.912 ServerApp] notebook_shim | extension was successfully linked.
+[W 2024-03-28 09:33:47.923 ServerApp] WARNING: The Jupyter server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 2024-03-28 09:33:47.923 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-03-28 09:33:47.925 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-03-28 09:33:47.925 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-03-28 09:33:47.927 LabApp] JupyterLab extension loaded from /root/miniconda3/envs/chatglm/lib/python3.11/site-packages/jupyterlab
+[I 2024-03-28 09:33:47.927 LabApp] JupyterLab application directory is /root/miniconda3/envs/chatglm/share/jupyter/lab
+[I 2024-03-28 09:33:47.927 LabApp] Extension Manager is 'pypi'.
+[I 2024-03-28 09:33:47.938 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-03-28 09:33:47.940 ServerApp] notebook | extension was successfully loaded.
+[I 2024-03-28 09:33:47.940 ServerApp] The port 8000 is already in use, trying another port.
+[I 2024-03-28 09:33:47.940 ServerApp] Serving notebooks from local directory: /root/ChatGLM3/basic_demo
+[I 2024-03-28 09:33:47.940 ServerApp] Jupyter Server 2.13.0 is running at:
+[I 2024-03-28 09:33:47.940 ServerApp] http://localhost:8001/lab?token=...
+[I 2024-03-28 09:33:47.940 ServerApp]     http://127.0.0.1:8001/lab?token=...
+[I 2024-03-28 09:33:47.940 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-03-28 09:33:47.956 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2024-03-28 09:40:31.945 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2024-03-28 09:40:33.101 ServerApp] New terminal with automatic name: 1
+[W 2024-03-28 09:40:34.119 ServerApp] 404 GET /api/contents/ai_translator?1711590033582 (f377c5b0d287438fa1f77f434257481b@103.116.44.79) 0.70ms referer=http://122.8.185.244:8000/lab
+[W 2024-03-28 09:40:34.119 ServerApp] 404 GET /api/contents/ai_translator?1711590033582 (103.116.44.79): No such file or directory: ai_translator
+[I 2024-03-28 10:21:09.786 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-03-28 10:21:09.789 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2024-03-28 10:21:09.791 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2024-03-28 10:21:09.793 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2024-03-28 10:21:09.793 ServerApp] jupyterlab | extension was successfully linked.
+[I 2024-03-28 10:21:09.796 ServerApp] notebook | extension was successfully linked.
+[I 2024-03-28 10:21:09.979 ServerApp] notebook_shim | extension was successfully linked.
+[W 2024-03-28 10:21:09.990 ServerApp] WARNING: The Jupyter server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 2024-03-28 10:21:09.990 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-03-28 10:21:09.992 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-03-28 10:21:09.993 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-03-28 10:21:09.994 LabApp] JupyterLab extension loaded from /root/miniconda3/envs/chatglm/lib/python3.11/site-packages/jupyterlab
+[I 2024-03-28 10:21:09.994 LabApp] JupyterLab application directory is /root/miniconda3/envs/chatglm/share/jupyter/lab
+[I 2024-03-28 10:21:09.994 LabApp] Extension Manager is 'pypi'.
+[I 2024-03-28 10:21:10.005 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-03-28 10:21:10.007 ServerApp] notebook | extension was successfully loaded.
+[I 2024-03-28 10:21:10.007 ServerApp] Serving notebooks from local directory: /root/ChatGLM3/basic_demo
+[I 2024-03-28 10:21:10.007 ServerApp] Jupyter Server 2.13.0 is running at:
+[I 2024-03-28 10:21:10.007 ServerApp] http://localhost:7870/lab?token=...
+[I 2024-03-28 10:21:10.007 ServerApp]     http://127.0.0.1:7870/lab?token=...
+[I 2024-03-28 10:21:10.007 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-03-28 10:21:10.023 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2024-03-28 10:21:30.954 LabApp] 302 GET /lab (@119.8.1.187) 0.70ms
+[I 2024-03-28 10:21:38.754 ServerApp] User d9eda4a9fb66461fb86a088bf568ba42 logged in.
+[I 2024-03-28 10:21:38.754 ServerApp] 302 POST /login?next=%2Flab (d9eda4a9fb66461fb86a088bf568ba42@119.8.1.187) 1.26ms
+[I 2024-03-28 10:24:39.833 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-03-28 10:24:39.836 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2024-03-28 10:24:39.838 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2024-03-28 10:24:39.840 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2024-03-28 10:24:39.840 ServerApp] jupyterlab | extension was successfully linked.
+[I 2024-03-28 10:24:39.843 ServerApp] notebook | extension was successfully linked.
+[I 2024-03-28 10:24:40.019 ServerApp] notebook_shim | extension was successfully linked.
+[W 2024-03-28 10:24:40.030 ServerApp] WARNING: The Jupyter server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 2024-03-28 10:24:40.031 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-03-28 10:24:40.032 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-03-28 10:24:40.033 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-03-28 10:24:40.034 LabApp] JupyterLab extension loaded from /root/miniconda3/envs/chatglm/lib/python3.11/site-packages/jupyterlab
+[I 2024-03-28 10:24:40.034 LabApp] JupyterLab application directory is /root/miniconda3/envs/chatglm/share/jupyter/lab
+[I 2024-03-28 10:24:40.034 LabApp] Extension Manager is 'pypi'.
+[I 2024-03-28 10:24:40.045 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-03-28 10:24:40.047 ServerApp] notebook | extension was successfully loaded.
+[I 2024-03-28 10:24:40.047 ServerApp] The port 8000 is already in use, trying another port.
+[I 2024-03-28 10:24:40.048 ServerApp] The port 8001 is already in use, trying another port.
+[I 2024-03-28 10:24:40.048 ServerApp] The port 8002 is already in use, trying another port.
+[I 2024-03-28 10:24:40.048 ServerApp] Serving notebooks from local directory: /root/ChatGLM3/basic_demo
+[I 2024-03-28 10:24:40.048 ServerApp] Jupyter Server 2.13.0 is running at:
+[I 2024-03-28 10:24:40.048 ServerApp] http://localhost:8003/lab?token=...
+[I 2024-03-28 10:24:40.048 ServerApp]     http://127.0.0.1:8003/lab?token=...
+[I 2024-03-28 10:24:40.048 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-03-28 10:24:40.064 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server

@@ -1,11 +1,29 @@
 import os
 import platform
+import torch
 from transformers import AutoTokenizer, AutoModel
-MODEL_PATH = os.environ.get('MODEL_PATH', 'THUDM/chatglm3-6b')
-TOKENIZER_PATH = os.environ.get("TOKENIZER_PATH", MODEL_PATH)
+import sys
+from pathlib import Path
 
-tokenizer = AutoTokenizer.from_pretrained(TOKENIZER_PATH, trust_remote_code=True)
-model = AutoModel.from_pretrained(MODEL_PATH, trust_remote_code=True, device_map="auto").eval()
+# MODEL_PATH = os.environ.get('MODEL_PATH', '/root/models/chatglm3-6b')
+# MODEL_PATH = os.environ.get('MODEL_PATH', 'THUDM/chatglm3-6b')
+# TOKENIZER_PATH = os.environ.get("TOKENIZER_PATH", MODEL_PATH)
+# tokenizer = AutoTokenizer.from_pretrained(TOKENIZER_PATH, trust_remote_code=True)
+# model = AutoModel.from_pretrained(MODEL_PATH, trust_remote_code=True, device_map="auto").eval()
+
+
+import sys
+# 添加 finetune_demo 的父目录到 sys.path
+sys.path.append('/root/ChatGLM3')
+
+#从finetune_demo包中导入inference.ht的load_model_and_tokenizer方法
+from finetune_demo.inference_hf import load_model_and_tokenizer
+
+# 获取环境变量中的MODEL_PATH，如果没有，则使用微调后的模型
+MODEL_PATH = os.environ.get('MODEL_PATH', '/root/ChatGLM3/finetune_demo/output/checkpoint-3000')
+
+# 调用inference.py中微调后的模型
+model, tokenizer = load_model_and_tokenizer(MODEL_PATH) 
 
 os_name = platform.system()
 clear_command = 'cls' if os_name == 'Windows' else 'clear'

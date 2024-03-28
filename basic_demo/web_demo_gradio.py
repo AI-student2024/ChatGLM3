@@ -19,6 +19,7 @@ ensuring that the chat interface displays formatted text correctly.
 import os
 import gradio as gr
 import torch
+import peft
 from threading import Thread
 
 from typing import Union, Annotated
@@ -38,11 +39,30 @@ from transformers import (
 ModelType = Union[PreTrainedModel, PeftModelForCausalLM]
 TokenizerType = Union[PreTrainedTokenizer, PreTrainedTokenizerFast]
 
+
+
+import sys
+# 添加 finetune_demo 的父目录到 sys.path
+sys.path.append('/root/ChatGLM3')
+
+#从finetune_demo包中导入inference.ht的load_model_and_tokenizer方法
+from finetune_demo.inference_hf import load_model_and_tokenizer
+
+# 获取环境变量中的MODEL_PATH，如果没有，则使用微调后的模型
+MODEL_PATH = os.environ.get('MODEL_PATH', '/root/ChatGLM3/finetune_demo/output/checkpoint-3000')
+
+# 调用inference.py中微调后的模型
+model, tokenizer = load_model_and_tokenizer(MODEL_PATH) 
+
+
+
+""" # 从环境变量中获取模型路径，如果没有，则使用默认值
 MODEL_PATH = os.environ.get('MODEL_PATH', 'THUDM/chatglm3-6b')
-TOKENIZER_PATH = os.environ.get("TOKENIZER_PATH", MODEL_PATH)
+# 分词器路径，如果没有，则使用模型的路径
+TOKENIZER_PATH = os.environ.get("TOKENIZER_PATH", MODEL_PATH) """
 
-
-def _resolve_path(path: Union[str, Path]) -> Path:
+""" def _resolve_path(path: Union[str, Path]) -> Path:
+    '''将路径转换为Path对象，并解析环境变量和用户路径'''
     return Path(path).expanduser().resolve()
 
 
@@ -66,7 +86,7 @@ def load_model_and_tokenizer(
     return model, tokenizer
 
 
-model, tokenizer = load_model_and_tokenizer(MODEL_PATH, trust_remote_code=True)
+model, tokenizer = load_model_and_tokenizer(MODEL_PATH, trust_remote_code=True) """
 
 
 class StopOnTokens(StoppingCriteria):
@@ -174,4 +194,8 @@ with gr.Blocks() as demo:
     emptyBtn.click(lambda: None, None, chatbot, queue=False)
 
 demo.queue()
-demo.launch(server_name="127.0.0.1", server_port=7870, inbrowser=True, share=False)
+
+demo.launch(server_name="127.0.0.1", server_port=7870, inbrowser=True, share=False) 
+
+# 某些操作系统设置可能禁止从特定 IP 地址或者特定端口进行网络通信。您可以尝试不指定 IP 地址（即默认为 0.0.0.0），这样 Gradio 会尝试监听所有可用网络接口
+# demo.launch(server_port=8000, inbrowser=True, share=False)  
